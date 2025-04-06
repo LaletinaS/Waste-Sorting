@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Type of Waste</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            overflow: auto;
+        }
+        h1 {
+            margin-bottom: 20px;
+            background-color: #76B269;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 2px solid #333333;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            max-width: 900px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        .bin {
+            text-align: center;
+            background-color: #ffffff;
+            border: 2px solid #76B269;
+            border-radius: 10px;
+            width: 180px;
+            height: 250px;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        .bin:hover {
+            transform: scale(1.05);
+            background-color: #e5f7e5;
+        }
+        .bin .icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .bin p {
+            font-size: 18px;
+            color: #333333;
+            font-weight: bold;
+            margin-top: 80px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Choose Your Type of Waste</h1>
+
+    <div class="container">
+        <!-- Paper Bin -->
+        <div class="bin" onclick="window.location.href='paper_waste.html'">
+            <div class="icon">📄</div> <!-- Paper Icon -->
+            <p>Paper</p>
+        </div>
+
+        <!-- Plastic Bin -->
+        <div class="bin" onclick="window.location.href='plastic_waste.html'">
+            <div class="icon">🥤</div> <!-- Plastic Icon -->
+            <p>Plastic</p>
+        </div>
+
+        <!-- Glass Bin -->
+        <div class="bin" onclick="window.location.href='glass_waste.html'">
+            <div class="icon">🍷</div> <!-- Glass Icon -->
+            <p>Glass</p>
+        </div>
+
+        <!-- Organic Waste Bin -->
+        <div class="bin" onclick="window.location.href='organic_waste.html'">
+            <div class="icon">🍎</div> <!-- Organic Icon -->
+            <p>Organic</p>
+        </div>
+    </div>
+
+    <a href="Waste_Sorting.html" class="button">Back to Home</a>
+
+</body>
+</html>
